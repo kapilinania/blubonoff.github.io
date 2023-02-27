@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <img src="1.png" alt="" width="300" height="300" id="img">
+        <button type="button" id="button_in" onclick="on()">On Click me</button>
+        <button type="button" id="button_in" onclick="off()">Off Click me</button>
+    </div>
+    <script>
+        function on(){
+            document.getElementById("img").innerHTML = `<img src="2.png" alt="" width="300" height="300" id="img">`
+            document.getElementById("img").src = '2.png';
+        }
+        function off(){
+            document.getElementById("img").innerHTML = `<img src="2.png" alt="" width="300" height="300" id="img">`
+            document.getElementById("img").src = '1.png';
+        }
+    </script>
+  
+   
+</body>
+</html>
